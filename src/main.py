@@ -3,7 +3,7 @@ from RocketSimulation.objects import Rocket
 from RocketSimulation.simulation import Simulation, RocketSimulation
 
 def main():
-    newSim = RocketSimulation(Rocket(1000, 100, (0, 0), (0, 10)), WorldData(), RocketEndConditions(-100, 100))
+    newSim = RocketSimulation(Rocket(990, 100, 1, (0, 100), (0, -10)), WorldData(), RocketEndConditions(-50, 1000))
     Simulation.start(newSim)
     Simulation.display(newSim)
 
